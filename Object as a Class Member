@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Address {
+public:
+    void show() {
+        cout << "Hyderabad";
+    }
+};
+
+class Student {
+public:
+    Address address;
+
+    void display() {
+        cout << "Student Address: ";
+        address.show();
+    }
+};
+
+int main() {
+    Student s;
+    s.display();
+
+    return 0;
+}
