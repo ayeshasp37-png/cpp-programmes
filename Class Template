@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+template <class T>
+class Student {
+public:
+    T marks;
+
+    Student(T m) {
+        marks = m;
+    }
+
+    void display() {
+        cout << "Marks = " << marks;
+    }
+};
+
+int main() {
+    Student<int> s(90);
+
+    s.display();
+
+    return 0;
+}
