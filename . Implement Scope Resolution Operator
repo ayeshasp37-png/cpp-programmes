@@ -1,20 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int n) {
-    if (n == 0 || n == 1)
-        return 1;
+class Student {
+public:
+    void display();
+};
 
-    return n * factorial(n - 1);
+void Student::display() {
+    cout << "This is a Student class.";
 }
 
 int main() {
-    int n;
-
-    cout << "Enter a number: ";
-    cin >> n;
-
-    cout << "Factorial = " << factorial(n);
+    Student s;
+    s.display();
 
     return 0;
 }
