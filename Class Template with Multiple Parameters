@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+template <class T, class U>
+class Student {
+public:
+    T marks;
+    U grade;
+
+    Student(T m, U g) {
+        marks = m;
+        grade = g;
+    }
+
+    void display() {
+        cout << "Marks = " << marks << endl;
+        cout << "Grade = " << grade;
+    }
+};
+
+int main() {
+    Student<int, char> s(90, 'A');
+
+    s.display();
+
+    return 0;
+}
