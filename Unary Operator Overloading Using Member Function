@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Number {
+public:
+    int x;
+
+    Number(int a) {
+        x = a;
+    }
+
+    void operator-() {
+        x = -x;
+    }
+};
+
+int main() {
+    Number n(10);
+
+    -n;
+
+    cout << "Value = " << n.x;
+
+    return 0;
+}
