@@ -1,0 +1,19 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main() {
+    map<int, string> students;
+
+    students[1] = "Ayesha";
+    students[2] = "Rahul";
+    students[3] = "Anu";
+
+    cout << "Students:" << endl;
+
+    for (auto x : students) {
+        cout << x.first << " " << x.second << endl;
+    }
+
+    return 0;
+}
